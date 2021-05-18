@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ical.marudot.com//iCal Event Maker
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/Berlin
+X-LIC-LOCATION:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200612T122608Z
+UID:20200612T122608Z-1747472560@marudot.com
+DTSTART;TZID=Europe/Berlin:20200617T170000
+DTEND;TZID=Europe/Berlin:20200617T174500
+SUMMARY:X-Europe Data Science Webinar - Modelling the spread of SARS-CoV-2 How reliable are simulated forecasts
+URL:https%3A%2F%2Fmodelling-the-spread-of-sars-cov.carrd.co%2F
+DESCRIPTION:REGISTRATION: https://modelling-the-spread-of-sars-cov.carrd.co/\n\nJoin us on the next series of the X-Europe joint meetup webinars!\n\nDETAILS\nThis is a joint online event of Vienna Data Science Group\, Frankfurt Data Science\, Budapest Data Science Meetup\, BCN Analytics\, Budapest.AI\, Barcelona Data Science and Machine Learning Meetup\, [Budapest Deep Learning Reading Seminar]() and [Warsaw R Users Group]().\n\nSPEAKER\nDr. Martin Bicher is chief developer of the COVID-19 modelling team around Dr. Niki Popper in dwh simulation-services GmbH\, which currently supports decision makers all around Austria with simulated forecasts\, scenarios and policy evaluations. Moreover\, he is postdoctoral researcher at the Institute of Information Systems Engineering at TU Wien where he finished his PhD in Technical Mathematics.\n\nTOPIC\nSince the worldwide outbreak of the COVID-19 pandemic\, experts all around the globe are working heavily to establish reliable forecasts for the spread of the disease. Hereby they allow decision makers to roughly plan ahead and inform the population with estimates of what might still lie ahead. Yet\, the huge jungle of different models\, data and results is confusing and difficult to overlook: what models are reliable\, which results can be trusted and what are the secrets behind these models?\n\nREGISTRATION: https://modelling-the-spread-of-sars-cov.carrd.co/
+LOCATION:Online
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:X-Europe Data Science Webinar - Modelling the spread of SARS-CoV-2 How reliable are simulated forecasts
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

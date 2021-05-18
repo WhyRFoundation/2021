@@ -1,0 +1,1 @@
+export { SponsorsSectionTemplate } from './SponsorsSectionTemplate'

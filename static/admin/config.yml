@@ -1,0 +1,73 @@
+backend:
+  name: test-repo
+
+publish_mode: editorial_workflow
+media_folder: static/assets
+public_folder: assets
+
+collections:
+  - name: pages
+    label: Pages
+    files:
+      - file: "content/pages/homePage.md"
+        name: homePage
+        label: Home Page
+        fields:
+          - {
+              label: "Page template",
+              name: "pageTemplate",
+              widget: "hidden",
+              default: "homePageTemplate",
+            }
+          - {
+              label: "Page PrefixPath",
+              name: "pagePrefixPath",
+              widget: "hidden",
+              default: "",
+            }
+          - { name: date, label: Date, widget: date }
+          - { name: title, label: Title, widget: string }
+          - { name: description, label: Description, widget: string }
+  - name: blog
+    label: Blog
+    folder: content/blog
+    create: true
+    fields:
+      - {
+          label: "Page template",
+          name: "pageTemplate",
+          widget: "hidden",
+          default: "post",
+        }
+      - {
+          label: "Page PrefixPath",
+          name: "pagePrefixPath",
+          widget: "hidden",
+          default: "blog",
+        }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: body, label: Body, widget: markdown }
+
+  - name: products
+    label: Products
+    folder: content/products
+    create: true
+    fields:
+      - {
+          label: "Page template",
+          name: "pageTemplate",
+          widget: "hidden",
+          default: "product",
+        }
+      - {
+          label: "Page PrefixPath",
+          name: "pagePrefixPath",
+          widget: "hidden",
+          default: "products",
+        }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: body, label: Body, widget: markdown }
