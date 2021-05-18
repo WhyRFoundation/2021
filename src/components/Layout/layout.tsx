@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     ${reset};
     box-sizing: border-box;
-    font-family: Open Sans,Helvetica,sans-serif;
+    font-family: 'Roboto', Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.04em;
@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
       line-height: 1.65em;
       margin: 0;
       padding: 0;
-      font-family:'Montserrat', sans-serif;
+      font-family:'Montserrat', sans-serif !important;
     }
 
     p, h1,h2,h3,h4,h5,h6, figure, figcaption,a, button, li, nav, header, div {

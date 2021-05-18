@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Why R? 2021 Conference`,
+    title: `Why R? 2020 Conference`,
     author: `Emil Buszyło, Marcin Kosinski and Michał Burdukiewicz`,
-    description: `Why R? 2021: an international conference about R applications, ranging from pure science to business`,
-    siteUrl: 'https://whyr.pl',
+    description: `Why R? 2020: an international conference about R applications, ranging from pure science to business`,
+    siteUrl: 'https://test.io',
     logo: `content/assets/whyr-logo.png`,
     fbPageId: `378708019146780`,
     dateModified: new Date(),
@@ -134,17 +134,16 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts-v2`,
       options: {
         fonts: [
           {
-            family: `Montserrat`,
-            variants: [`300`, `400`, `500`, `700`],
+            family: 'Montserrat',
+            weights: ['200..700'],
           },
           {
-            family: `Roboto`,
-            variants: [`300`, `400`, `700`],
-            subsets: [`latin`],
+            family: 'Roboto',
+            weights: ['200..700'],
           },
         ],
       },

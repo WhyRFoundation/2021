@@ -698,7 +698,6 @@ export type FileFieldsEnum =
   'childMdx___frontmatter___description' |
   'childMdx___frontmatter___keywords' |
   'childMdx___frontmatter___redirect' |
-  'childMdx___frontmatter___date' |
   'childMdx___frontmatter___subtitle' |
   'childMdx___frontmatter___sections' |
   'childMdx___frontmatter___sections___type' |
@@ -706,6 +705,7 @@ export type FileFieldsEnum =
   'childMdx___frontmatter___sections___content' |
   'childMdx___frontmatter___sections___images' |
   'childMdx___frontmatter___sections___sponsors' |
+  'childMdx___frontmatter___date' |
   'childMdx___body' |
   'childMdx___excerpt' |
   'childMdx___headings' |
@@ -1445,7 +1445,6 @@ export type MdxFieldsEnum =
   'frontmatter___description' |
   'frontmatter___keywords' |
   'frontmatter___redirect' |
-  'frontmatter___date' |
   'frontmatter___subtitle' |
   'frontmatter___sections' |
   'frontmatter___sections___type' |
@@ -1455,13 +1454,14 @@ export type MdxFieldsEnum =
   'frontmatter___sections___images___imgUrl' |
   'frontmatter___sections___images___name' |
   'frontmatter___sections___images___role' |
-  'frontmatter___sections___images___title' |
-  'frontmatter___sections___images___linkUrl' |
   'frontmatter___sections___images___isLazy' |
   'frontmatter___sections___images___socials' |
+  'frontmatter___sections___images___title' |
+  'frontmatter___sections___images___linkUrl' |
   'frontmatter___sections___sponsors' |
   'frontmatter___sections___sponsors___rank' |
   'frontmatter___sections___sponsors___images' |
+  'frontmatter___date' |
   'body' |
   'excerpt' |
   'headings' |
@@ -1593,9 +1593,9 @@ export type MdxFrontmatter = {
   description?: Maybe<Scalars['String']>,
   keywords?: Maybe<Scalars['String']>,
   redirect?: Maybe<Scalars['String']>,
-  date?: Maybe<Scalars['Date']>,
   subtitle?: Maybe<Scalars['String']>,
   sections?: Maybe<Array<Maybe<MdxFrontmatterSections>>>,
+  date?: Maybe<Scalars['Date']>,
 };
 
 
@@ -1614,9 +1614,9 @@ export type MdxFrontmatterFilterInput = {
   description?: Maybe<StringQueryOperatorInput>,
   keywords?: Maybe<StringQueryOperatorInput>,
   redirect?: Maybe<StringQueryOperatorInput>,
-  date?: Maybe<DateQueryOperatorInput>,
   subtitle?: Maybe<StringQueryOperatorInput>,
   sections?: Maybe<MdxFrontmatterSectionsFilterListInput>,
+  date?: Maybe<DateQueryOperatorInput>,
 };
 
 export type MdxFrontmatterSections = {
@@ -1643,20 +1643,20 @@ export type MdxFrontmatterSectionsImages = {
   imgUrl?: Maybe<Scalars['String']>,
   name?: Maybe<Scalars['String']>,
   role?: Maybe<Scalars['String']>,
-  title?: Maybe<Scalars['String']>,
-  linkUrl?: Maybe<Scalars['String']>,
   isLazy?: Maybe<Scalars['Boolean']>,
   socials?: Maybe<Array<Maybe<MdxFrontmatterSectionsImagesSocials>>>,
+  title?: Maybe<Scalars['String']>,
+  linkUrl?: Maybe<Scalars['String']>,
 };
 
 export type MdxFrontmatterSectionsImagesFilterInput = {
   imgUrl?: Maybe<StringQueryOperatorInput>,
   name?: Maybe<StringQueryOperatorInput>,
   role?: Maybe<StringQueryOperatorInput>,
-  title?: Maybe<StringQueryOperatorInput>,
-  linkUrl?: Maybe<StringQueryOperatorInput>,
   isLazy?: Maybe<BooleanQueryOperatorInput>,
   socials?: Maybe<MdxFrontmatterSectionsImagesSocialsFilterListInput>,
+  title?: Maybe<StringQueryOperatorInput>,
+  linkUrl?: Maybe<StringQueryOperatorInput>,
 };
 
 export type MdxFrontmatterSectionsImagesFilterListInput = {
@@ -2490,8 +2490,7 @@ export type SitePageFieldsEnum =
   'pluginCreator___pluginOptions___extensions' |
   'pluginCreator___pluginOptions___gatsbyRemarkPlugins' |
   'pluginCreator___pluginOptions___gatsbyRemarkPlugins___resolve' |
-  'pluginCreator___pluginOptions___id' |
-  'pluginCreator___pluginOptions___includeInDevelopment' |
+  'pluginCreator___pluginOptions___pixelId' |
   'pluginCreator___pluginOptions___short_name' |
   'pluginCreator___pluginOptions___start_url' |
   'pluginCreator___pluginOptions___background_color' |
@@ -2503,8 +2502,7 @@ export type SitePageFieldsEnum =
   'pluginCreator___pluginOptions___codegenDelay' |
   'pluginCreator___pluginOptions___fonts' |
   'pluginCreator___pluginOptions___fonts___family' |
-  'pluginCreator___pluginOptions___fonts___variants' |
-  'pluginCreator___pluginOptions___fonts___subsets' |
+  'pluginCreator___pluginOptions___fonts___weights' |
   'pluginCreator___pluginOptions___pathCheck' |
   'pluginCreator___nodeAPIs' |
   'pluginCreator___browserAPIs' |
@@ -2711,8 +2709,7 @@ export type SitePluginFieldsEnum =
   'pluginOptions___gatsbyRemarkPlugins___options___loading' |
   'pluginOptions___gatsbyRemarkPlugins___options___disableBgImageOnAlpha' |
   'pluginOptions___gatsbyRemarkPlugins___options___disableBgImage' |
-  'pluginOptions___id' |
-  'pluginOptions___includeInDevelopment' |
+  'pluginOptions___pixelId' |
   'pluginOptions___short_name' |
   'pluginOptions___start_url' |
   'pluginOptions___background_color' |
@@ -2724,8 +2721,7 @@ export type SitePluginFieldsEnum =
   'pluginOptions___codegenDelay' |
   'pluginOptions___fonts' |
   'pluginOptions___fonts___family' |
-  'pluginOptions___fonts___variants' |
-  'pluginOptions___fonts___subsets' |
+  'pluginOptions___fonts___weights' |
   'pluginOptions___pathCheck' |
   'nodeAPIs' |
   'browserAPIs' |
@@ -2848,8 +2844,7 @@ export type SitePluginPluginOptions = {
   fields?: Maybe<Array<Maybe<Scalars['String']>>>,
   extensions?: Maybe<Array<Maybe<Scalars['String']>>>,
   gatsbyRemarkPlugins?: Maybe<Array<Maybe<SitePluginPluginOptionsGatsbyRemarkPlugins>>>,
-  id?: Maybe<Scalars['String']>,
-  includeInDevelopment?: Maybe<Scalars['Boolean']>,
+  pixelId?: Maybe<Scalars['String']>,
   short_name?: Maybe<Scalars['String']>,
   start_url?: Maybe<Scalars['String']>,
   background_color?: Maybe<Scalars['String']>,
@@ -2870,8 +2865,7 @@ export type SitePluginPluginOptionsFilterInput = {
   fields?: Maybe<StringQueryOperatorInput>,
   extensions?: Maybe<StringQueryOperatorInput>,
   gatsbyRemarkPlugins?: Maybe<SitePluginPluginOptionsGatsbyRemarkPluginsFilterListInput>,
-  id?: Maybe<StringQueryOperatorInput>,
-  includeInDevelopment?: Maybe<BooleanQueryOperatorInput>,
+  pixelId?: Maybe<StringQueryOperatorInput>,
   short_name?: Maybe<StringQueryOperatorInput>,
   start_url?: Maybe<StringQueryOperatorInput>,
   background_color?: Maybe<StringQueryOperatorInput>,
@@ -2887,14 +2881,12 @@ export type SitePluginPluginOptionsFilterInput = {
 
 export type SitePluginPluginOptionsFonts = {
   family?: Maybe<Scalars['String']>,
-  variants?: Maybe<Array<Maybe<Scalars['String']>>>,
-  subsets?: Maybe<Array<Maybe<Scalars['String']>>>,
+  weights?: Maybe<Array<Maybe<Scalars['String']>>>,
 };
 
 export type SitePluginPluginOptionsFontsFilterInput = {
   family?: Maybe<StringQueryOperatorInput>,
-  variants?: Maybe<StringQueryOperatorInput>,
-  subsets?: Maybe<StringQueryOperatorInput>,
+  weights?: Maybe<StringQueryOperatorInput>,
 };
 
 export type SitePluginPluginOptionsFontsFilterListInput = {
