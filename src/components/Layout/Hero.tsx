@@ -142,7 +142,8 @@ const Subtitle = styled.p`
     font-size: 1.3em;
     line-height: 1.6em;
   }
-  
+`
+
 const SubSubtitle = styled.p`
   font-size: 2em;
   font-weight: 700;
