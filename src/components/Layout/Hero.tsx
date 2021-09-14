@@ -7,27 +7,28 @@ import { useStaticQuery, graphql } from 'gatsby'
 export interface HeroProps {
   title?: string
   subtitle?: string
+  subsubtitle?: string
 }
 
-export const Hero: React.FC<HeroProps> = ({ title, subtitle }) => {
+export const Hero: React.FC<HeroProps> = ({ title, subtitle, subsubtitle }) => {
   const { mobileImage, desktopImage, bigDesktopImage } = useStaticQuery(
     graphql`
       query {
-        mobileImage: file(relativePath: { eq: "whyr-big-bg.jpg" }) {
+        mobileImage: file(relativePath: { eq: "whyr-big-bg-stock.jpeg" }) {
           childImageSharp {
             fluid(maxWidth: 900, quality: 90) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        desktopImage: file(relativePath: { eq: "whyr-big-bg.jpg" }) {
+        desktopImage: file(relativePath: { eq: "whyr-big-bg-stock.jpeg" }) {
           childImageSharp {
             fluid(maxWidth: 1700, quality: 90) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        bigDesktopImage: file(relativePath: { eq: "whyr-big-bg.jpg" }) {
+        bigDesktopImage: file(relativePath: { eq: "whyr-big-bg-stock.jpeg" }) {
           childImageSharp {
             fluid(maxWidth: 2400, quality: 95) {
               ...GatsbyImageSharpFluid
@@ -54,10 +55,11 @@ export const Hero: React.FC<HeroProps> = ({ title, subtitle }) => {
     <Wrapper>
       <BgImage fluid={sources} />
       <Content>
-        // <Logo src={LogoImg} alt="whyrConf logo" />
+        <Logo src={LogoImg} alt="whyrConf logo" />
         <TextBar>
           {title && <Title>{title}</Title>}
           {subtitle && <Subtitle>{subtitle}</Subtitle>}
+          {subsubtitle && <SubSubtitle>{subsubtitle}</SubSubtitle>}
         </TextBar>
       </Content>
       <Overlay />
@@ -133,6 +135,15 @@ const Title = styled.h1`
 `
 
 const Subtitle = styled.p`
+  font-size: 2em;
+  font-weight: 700;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.3em;
+    line-height: 1.6em;
+  }
+  
+const SubSubtitle = styled.p`
   font-size: 2em;
   font-weight: 700;
 
