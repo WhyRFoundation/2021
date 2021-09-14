@@ -14,21 +14,21 @@ export const Hero: React.FC<HeroProps> = ({ title, subtitle, subsubtitle }) => {
   const { mobileImage, desktopImage, bigDesktopImage } = useStaticQuery(
     graphql`
       query {
-        mobileImage: file(relativePath: { eq: "whyr-big-bg-stock.jpeg" }) {
+        mobileImage: file(relativePath: { eq: "whyr-big-bg-stock.png" }) {
           childImageSharp {
             fluid(maxWidth: 900, quality: 90) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        desktopImage: file(relativePath: { eq: "whyr-big-bg-stock.jpeg" }) {
+        desktopImage: file(relativePath: { eq: "whyr-big-bg-stock.png" }) {
           childImageSharp {
             fluid(maxWidth: 1700, quality: 90) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        bigDesktopImage: file(relativePath: { eq: "whyr-big-bg-stock.jpeg" }) {
+        bigDesktopImage: file(relativePath: { eq: "whyr-big-bg-stock.png" }) {
           childImageSharp {
             fluid(maxWidth: 2400, quality: 95) {
               ...GatsbyImageSharpFluid
