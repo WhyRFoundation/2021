@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Why R? 2020 Conference`,
+    title: `Why R? 2021 Conference`,
     author: `Emil Buszyło, Marcin Kosinski and Michał Burdukiewicz`,
-    description: `Why R? 2020: an international conference about R applications, ranging from pure science to business`,
-    siteUrl: 'https://test.io',
+    description: `Why R? 2021: an international conference about R applications, ranging from pure science to business`,
+    siteUrl: 'https://whyr.pl',
     logo: `content/assets/whyr-logo.png`,
     fbPageId: `378708019146780`,
     dateModified: new Date(),
@@ -116,7 +116,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Why R? 2020 Conference`,
+        name: `Why R? 2021 Conference`,
         short_name: `Why R?`,
         start_url: `/`,
         background_color: `#929fab`,

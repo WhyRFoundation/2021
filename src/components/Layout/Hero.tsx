@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Image from 'gatsby-image'
-import LogoImg from '../../../content/assets/whyr_logo2020.png'
+import LogoImg from '../../../content/assets/logo_2021.png'
 import { useStaticQuery, graphql } from 'gatsby'
 
 export interface HeroProps {
@@ -13,21 +13,21 @@ export const Hero: React.FC<HeroProps> = ({ title, subtitle }) => {
   const { mobileImage, desktopImage, bigDesktopImage } = useStaticQuery(
     graphql`
       query {
-        mobileImage: file(relativePath: { eq: "whyr-big-bg.jpeg" }) {
+        mobileImage: file(relativePath: { eq: "whyr-big-bg.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 900, quality: 90) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        desktopImage: file(relativePath: { eq: "whyr-big-bg.jpeg" }) {
+        desktopImage: file(relativePath: { eq: "whyr-big-bg.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1700, quality: 90) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        bigDesktopImage: file(relativePath: { eq: "whyr-big-bg.jpeg" }) {
+        bigDesktopImage: file(relativePath: { eq: "whyr-big-bg.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 2400, quality: 95) {
               ...GatsbyImageSharpFluid
@@ -54,7 +54,7 @@ export const Hero: React.FC<HeroProps> = ({ title, subtitle }) => {
     <Wrapper>
       <BgImage fluid={sources} />
       <Content>
-        <Logo src={LogoImg} alt="whyrConf logo" />
+        // <Logo src={LogoImg} alt="whyrConf logo" />
         <TextBar>
           {title && <Title>{title}</Title>}
           {subtitle && <Subtitle>{subtitle}</Subtitle>}
