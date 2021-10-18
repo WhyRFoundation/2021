@@ -26,7 +26,7 @@ interface Images {
 }
 
 const COLOR_MAP = {
-  platinium: '#888',
+  platinum: '#888',
   gold: '#cea128',
   silver: 'silver',
   bronze: '#654321',
