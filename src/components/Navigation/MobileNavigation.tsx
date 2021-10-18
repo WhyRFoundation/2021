@@ -41,8 +41,8 @@ export const MobileNavigation: React.FC<MobileNavigationProps> = ({
           </MobileStyledLink>
         </LinkWrapper>
         <LinkWrapper>
-          <MobileStyledLink onClick={() => scrollToHandler('WHY R? 2021 WEBINARS')}>
-            WEBINARS
+          <MobileStyledLink onClick={() => scrollToHandler('SPONSORS')}>
+            SPONSORS
           </MobileStyledLink>
         </LinkWrapper>
         <LinkWrapper>

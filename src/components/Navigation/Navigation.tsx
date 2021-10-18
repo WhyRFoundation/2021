@@ -68,8 +68,8 @@ export const Navigation: React.FC<{}> = () => {
           </NavigationLink>
         </LinkWrapper>
         <LinkWrapper>
-          <NavigationLink onClick={() => scrollToHandler('PARTNERS')}>
-            PARTNERS
+          <NavigationLink onClick={() => scrollToHandler('SPONSORS')}>
+            SPONSORS
           </NavigationLink>
         </LinkWrapper>
         <LinkWrapper>
