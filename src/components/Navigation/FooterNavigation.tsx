@@ -9,10 +9,6 @@ export const FooterNavigation: React.FC<{}> = () => (
       <CtaNavButtonText>Register</CtaNavButtonText>
       <StyledTicketIcon />
     </CtaNavButton>
-    <CtaNavButton href="/submit" target="_blank">
-      <CtaNavButtonText>Submit</CtaNavButtonText>
-      <StyledSpeakerIcon />
-    </CtaNavButton>    
     <CtaNavButton href="/youtube" target="_blank">
       <CtaNavButtonText>YouTube</CtaNavButtonText>
       <StyledSpeakerIcon />
