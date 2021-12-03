@@ -53,6 +53,11 @@ export const Navigation: React.FC<{}> = () => {
       </StyledNav>
       <StyledNav>
         <LinkWrapper>
+          <NavigationLink onClick={() => scrollToHandler('Agenda')}>
+            Agenda
+          </NavigationLink>
+        </LinkWrapper>
+        <LinkWrapper>
           <NavigationLink onClick={() => scrollToHandler('About')}>
             About
           </NavigationLink>
