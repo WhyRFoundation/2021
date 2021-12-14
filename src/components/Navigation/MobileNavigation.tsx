@@ -31,8 +31,8 @@ export const MobileNavigation: React.FC<MobileNavigationProps> = ({
           </MobileStyledLink>
         </LinkWrapper>
         <LinkWrapper>
-          <MobileStyledLink onClick={() => scrollToHandler('Agenda')}>
-            Agenda
+          <MobileStyledLink onClick={() => scrollToHandler('Videos')}>
+            Videos
           </MobileStyledLink>
         </LinkWrapper>
         <LinkWrapper>

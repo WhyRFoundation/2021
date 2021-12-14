@@ -5,10 +5,6 @@ import { MdSpeakerNotes } from 'react-icons/md'
 
 export const FooterNavigation: React.FC<{}> = () => (
   <Wrapper>
-    <CtaNavButton href="https://app.evenea.pl/event/whyr2021/?lang=en" target="_blank">
-      <CtaNavButtonText>Register</CtaNavButtonText>
-      <StyledTicketIcon />
-    </CtaNavButton>
     <CtaNavButton href="/youtube" target="_blank">
       <CtaNavButtonText>YouTube</CtaNavButtonText>
       <StyledSpeakerIcon />

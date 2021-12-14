@@ -42,10 +42,6 @@ export const Navigation: React.FC<{}> = () => {
   return (
     <Wrapper fillNav={fillNav}>
       <StyledNav>
-        <CtaNavButton href="https://app.evenea.pl/event/whyr2021/?lang=en" target="_blank">
-          <CtaNavButtonText>Register</CtaNavButtonText>
-          <StyledTicketIcon />
-        </CtaNavButton>
         <CtaNavButton href="/youtube" target="_blank">
           <CtaNavButtonText>YouTube</CtaNavButtonText>
           <StyledSpeakerIcon />
@@ -53,8 +49,8 @@ export const Navigation: React.FC<{}> = () => {
       </StyledNav>
       <StyledNav>
         <LinkWrapper>
-          <NavigationLink onClick={() => scrollToHandler('Agenda')}>
-            Agenda
+          <NavigationLink onClick={() => scrollToHandler('Videos')}>
+            Videos
           </NavigationLink>
         </LinkWrapper>
         <LinkWrapper>
