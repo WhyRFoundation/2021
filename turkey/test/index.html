@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+	<title>Event Go</title>
+	
+	<link href="assets/css/bootstrap-grid.css" rel="stylesheet">
+	<link href="assets/css/font-awesome.css" rel="stylesheet">
+	<link href="assets/css/zoomslider.css" rel="stylesheet">
+	<link href="assets/css/swiper.css" rel="stylesheet">
+	<link href="assets/css/swipebox.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,800%7CRoboto:900" rel="stylesheet"> 
+
+	<script type="text/javascript" src="assets/js/modernizr-2.6.2.min.js"></script>
+</head>
+<body data-spy="scroll" data-offset="120" data-target="#navbar">
+
+	<nav class="navbar navbar-fixed-top" id="nav-wrapper">
+
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar top-bar"></span>
+					<span class="icon-bar middle-bar"></span>
+					<span class="icon-bar bottom-bar"></span>
+				</button>
+				<a class="logo" href="index.html"><img src="assets/images/logo.png" alt="Logo"></a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">	
+				<button type="button" class="navbar-toggle collapsed">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar top-bar"></span>
+					<span class="icon-bar middle-bar"></span>
+					<span class="icon-bar bottom-bar"></span>
+				</button>			
+				<ul class="nav navbar-nav">
+					<li><a href="#about">About</a></li>
+					<li><a href="#speakers">Our Speakers</a></li>
+					<li><a href="#plan">Schedule</a></li>
+					<li><a href="#join">Buy Tickets</a></li>
+					<li><a href="#sponsors">Partners</a></li>
+					<li><a href="#news">News</a></li>
+					<li><a href="#subscribe">Subscribe</a></li>
+				</ul>
+			</div>		
+		</div>
+	</nav>
+	<section id="slider-full" class="slider-full" data-zs-bullets="false" data-zs-speed="14000" data-zs-interval="10000" data-zs-switchSpeed="400" data-zs-src='["assets/images/_slider-1.jpg","assets/images/_slider-2.jpg"]' data-zs-overlay="false">
+		<div class="container">
+			<div class="content">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="calendar">
+							<span class="day">24</span>
+							<span class="month">april '17</span>
+						</div>
+					</div>
+					<div class="col-md-10">
+						<h1>The biggest International <span>Business Conference</span></h1>
+						<p>Morbi efficitur vitae orci eu volutpat. Donec nulla justo, dapibus sed sodales ut, auctor a ante. Integer nec libero vitae nisi consectetur rhoncus id eget mi. Cras ullamcorper, augue ut rhoncus lobortis, enim arcu ornare est, sed gravida nisi lectus ac dui. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="time" id="time">
+		<div class="container">	
+			<div class="row">
+				<div class="col-md-4 col-sm-12">
+					<div class="header">Time Remaining</div>
+					Join the Conference long as it is available
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<div class="days clearfix" id="daysCountDown" data-date="2018/04/25">
+						<span>%D <span>days</span></span>
+						<span class="divider">:</span>						
+						<span>%H <span>hours</span></span>
+						<span class="divider">:</span>
+						<span>%M <span>minutes</span></span>
+						<span class="divider">:</span>
+						<span>%S <span>seconds</span></span>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-12">
+					<a href="#join" class="btn btn-white">Buy Ticket</a>
+				</div>			
+			</div>
+		</div>
+	</div>
+	<section class="about" id="about">
+		<div class="container">
+			<h3>About Conference</h3>
+			<p>Morbi efficitur vitae orci eu volutpat. Donec nulla justo, dapibus sed sodales ut, auctor a ante. Integer nec libero vitae nisi consectetur rhoncus id eget mi. Cras ullamcorper, augue ut rhoncus lobortis, enim arcu ornare est, sed gravida nisi lectus ac dui. Aliquam erat volutpat. Proin sed dapibus felis. Maecenas varius purus dapibus odio ullamcorper suscipit eget nec metus. Nunc nibh neque, porta id tincidunt in, aliquam nec felis. </p>
+			<a href="#" class="map-marker">Business Hall, 20-198 Taller str., Madrid, Spain</a>
+
+			<div class="row stat" id="countUp">
+				<div class="col-md-3 col-sm-6 col-ms-6">
+					<span class="number" id="countUp-1">3</span>
+					<span class="header">Days</span>
+					<p>Morbi efficitur vitae orci eu volutpat. Donec nulla justo, dapibus sed sodales ut, auctor a ante. </p>
+				</div>
+				<div class="col-md-3 col-sm-6 col-ms-6">
+					<span class="number" id="countUp-2">16</span>
+					<span class="header">Speakers</span>
+					<p>Vitae orci eu volutpat. Donec nulla justo, dapibus sed sodales ut, auctor a ante. Integer nec libero vitae nisi.</p>
+				</div>
+				<div class="col-md-3 col-sm-6 col-ms-6">
+					<span class="number" id="countUp-3">42</span>
+					<span class="header">Topics</span>
+					<p>Morbi efficitur vitae orci eu volutpat. Dapibus sed sodales ut, auctor a ante. Integer nec nisi consectetur rhoncus id eget mi. </p>
+				</div>
+				<div class="col-md-3 col-sm-6 col-ms-6">
+					<span class="number" id="countUp-4">529</span>
+					<span class="header">Seats</span>
+					<p>Morbi efficitur vitae orci. Dapibus sed sodales ut, auctor a ante. Integer nec libero vitae nisi consectetur rhoncus. </p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="speakers parallax" id="speakers" style="background-image: url(assets/images/parallax-gray.png);">
+		<h3>Our Speakers</h3>
+		<div class="container">		
+			<div class="swiper-container row" id="speakers-slider">
+				<div class="swiper-wrapper">
+					<div class="col-md-3 col-sm-6 col-ms-6 swiper-slide">
+						<img src="assets/images/_speaker-1.jpg" class="full-width" alt="Speaker">
+						<div class="name">Michael Hummelsson</div>
+						<div class="descr">IT-manager</div>
+						<ul class="social">
+							<li><a href="#" class="fa fa-twitter"></a></li>
+							<li><a href="#" class="fa fa-facebook"></a></li>
+							<li><a href="#" class="fa fa-instagram"></a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6 col-ms-6 swiper-slide">
+						<img src="assets/images/_speaker-2.jpg" class="full-width" alt="Speaker">
+						<div class="name">Lora Brown</div>
+						<div class="descr">Gas company President</div>
+						<ul class="social">
+							<li><a href="#" class="fa fa-twitter"></a></li>
+							<li><a href="#" class="fa fa-facebook"></a></li>
+							<li><a href="#" class="fa fa-instagram"></a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6 col-ms-6 swiper-slide">
+						<img src="assets/images/_speaker-3.jpg" class="full-width" alt="Speaker">
+						<div class="name">Sylvia Goodman</div>
+						<div class="descr">IT-manager</div>
+						<ul class="social">
+							<li><a href="#" class="fa fa-twitter"></a></li>
+							<li><a href="#" class="fa fa-facebook"></a></li>
+							<li><a href="#" class="fa fa-instagram"></a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6 col-ms-6 swiper-slide">
+						<img src="assets/images/_speaker-4.jpg" class="full-width" alt="Speaker">
+						<div class="name">Marco Kalinich</div>
+						<div class="descr">General Partner UST-motors</div>
+						<ul class="social">
+							<li><a href="#" class="fa fa-twitter"></a></li>
+							<li><a href="#" class="fa fa-facebook"></a></li>
+							<li><a href="#" class="fa fa-instagram"></a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6 col-ms-6 swiper-slide">
+						<img src="assets/images/_speaker-1.jpg" class="full-width" alt="Speaker">
+						<div class="name">Michael Hummelsson</div>
+						<div class="descr">IT-manager</div>
+						<ul class="social">
+							<li><a href="#" class="fa fa-twitter"></a></li>
+							<li><a href="#" class="fa fa-facebook"></a></li>
+							<li><a href="#" class="fa fa-instagram"></a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6 col-ms-6 swiper-slide">
+						<img src="assets/images/_speaker-2.jpg" class="full-width" alt="Speaker">
+						<div class="name">Lora Brown</div>
+						<div class="descr">Gas company President</div>
+						<ul class="social">
+							<li><a href="#" class="fa fa-twitter"></a></li>
+							<li><a href="#" class="fa fa-facebook"></a></li>
+							<li><a href="#" class="fa fa-instagram"></a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6 col-ms-6 swiper-slide">
+						<img src="assets/images/_speaker-3.jpg" class="full-width" alt="Speaker">
+						<div class="name">Sylvia Goodman</div>
+						<div class="descr">IT-manager</div>
+						<ul class="social">
+							<li><a href="#" class="fa fa-twitter"></a></li>
+							<li><a href="#" class="fa fa-facebook"></a></li>
+							<li><a href="#" class="fa fa-instagram"></a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6 col-ms-6 swiper-slide">
+						<img src="assets/images/_speaker-4.jpg" class="full-width" alt="Speaker">
+						<div class="name">Marco Kalinich</div>
+						<div class="descr">General Partner UST-motors</div>
+						<ul class="social">
+							<li><a href="#" class="fa fa-twitter"></a></li>
+							<li><a href="#" class="fa fa-facebook"></a></li>
+							<li><a href="#" class="fa fa-instagram"></a></li>
+						</ul>
+					</div>					
+				</div>
+				<div class="arrows">
+					<a href="#" class="arrow-left fa fa-chevron-left"></a>
+					<a href="#" class="arrow-right fa fa-chevron-right"></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="plan parallax" id="plan">
+		<div class="container">
+			<h3>Schedule</h3>
+		    <div class="swiper-container" id="plan-slider">
+		    	<div class="swiper-pages"></div>		    
+		        <div class="swiper-wrapper">
+					<div class="items swiper-slide">
+						<div class="row item">
+							<div class="col-md-4 col-sm-4">
+								<div class="row">
+									<div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 photo">
+										<img src="assets/images/_speaker-1.jpg" class="full-width" alt="Speaker">
+									</div>
+									<div class="col-lg-9 col-md-8 col-sm-8 col-xs-9">
+										<div class="date">8:00 AM - 10:30 AM</div>
+										<div class="name">Michael Hummelsson</div>
+										<div class="descr">IT-manager</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-1 col-sm-1 divider hidden-ms hidden-xs"></div>
+							<div class="col-md-7 col-sm-7 col-xs-9 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-ms-offset-3  col-xs-offset-3 text">
+								<h4>Welcome speech</h4>
+								<p>Nulla facilisi. Praesent velit nisl, fermentum vitae efficitur at, maximus in est. Etiam ultrices congue sapien, ut dictum sapien sodales id. Phasellus sit amet elementum leo.</p>
+								<a href="#" class="more">Read more <span class="fa fa-chevron-right"></span></a>
+							</div>
+						</div>
+						<div class="row item">
+							<div class="col-md-4 col-sm-4">
+								<div class="row">
+									<div class="col-lg-3 col-md-4 col-sm-4 col-xs-3">
+										<img src="assets/images/_speaker-2.jpg" class="full-width" alt="Speaker">
+									</div>
+									<div class="col-lg-9 col-md-8 col-sm-8 col-xs-9">
+										<div class="date">11:00 AM - 14:30 PM</div>
+										<div class="name">Lora Brown</div>
+										<div class="descr">Gas company President</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-1 col-sm-1 divider hidden-ms hidden-xs"></div>
+							<div class="col-md-7 col-sm-7 col-xs-9 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-ms-offset-3  col-xs-offset-3 text">
+								<h4>Effective optimization of business processes</h4>
+								<p>Sed fringilla dignissim velit, vitae posuere nulla mollis in. Ut tincidunt laoreet felis, a mollis est gravida vitae. Vestibulum dolor sapien, scelerisque nec malesuada at, egestas in augue. </p>
+								<a href="#" class="more">Read more <span class="fa fa-chevron-right"></span></a>
+							</div>
+						</div>
+						<div class="row item">
+							<div class="col-md-4 col-sm-4">
+								<div class="row">
+									<div class="col-lg-3 col-md-4 col-sm-4 col-xs-3">
+										<img src="assets/images/_speaker-3.jpg" class="full-width" alt="Speaker">
+									</div>
+									<div class="col-lg-9 col-md-8 col-sm-8 col-xs-9">
+										<div class="date">15:00 PM - 17:00 PM</div>
+										<div class="name">Silvia Goodman</div>
+										<div class="descr">IT-developer</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-1 col-sm-1 divider hidden-ms hidden-xs"></div>
+							<div class="col-md-7 col-sm-7 col-xs-9 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-ms-offset-3  col-xs-offset-3 text">
+								<h4>Legal risks in management decisions</h4>
+								<p>Nulla facilisi. Praesent velit nisl, fermentum vitae efficitur at, maximus in est. Etiam ultrices congue sapien, ut dictum sapien sodales id. Phasellus sit amet elementum leo.</p>
+								<a href="#" class="more">Read more <span class="fa fa-chevron-right"></span></a>
+							</div>
+						</div>
+						<div class="row item">
+							<div class="col-md-4 col-sm-4">
+								<div class="row">
+									<div class="col-lg-3 col-md-4 col-sm-4 col-xs-3">
+										<img src="assets/images/_speaker-4.jpg" class="full-width" alt="Speaker">
+									</div>
+									<div class="col-lg-9 col-md-8 col-sm-8 col-xs-9">
+										<div class="date">17:30 PM - 19:00 PM</div>
+										<div class="name">Marco Kalinich</div>
+										<div class="descr">General partner UST-motors</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-1 col-sm-1 divider hidden-ms hidden-xs"></div>
+							<div class="col-md-7 col-sm-7 col-xs-9 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-ms-offset-3  col-xs-offset-3 text">
+								<h4>Technologies in financial institutions</h4>
+								<p>Sed fringilla dignissim velit, vitae posuere nulla mollis in. Ut tincidunt laoreet felis, a mollis est gravida vitae. Vestibulum dolor sapien, scelerisque nec malesuada at, egestas in augue. </p>
+								<a href="#" class="more">Read more <span class="fa fa-chevron-right"></span></a>
+							</div>												
+						</div>
+					</div>
+
+					<div class="items swiper-slide">
+						<div class="row item">
+							<div class="col-md-4 col-sm-4">
+								<div class="row">
+									<div class="col-lg-3 col-md-4 col-sm-4 col-xs-3">
+										<img src="assets/images/_speaker-1.jpg" class="full-width" alt="Speaker">
+									</div>
+									<div class="col-lg-9 col-md-8 col-sm-8 col-xs-9">
+										<div class="date">8:00 AM - 10:30 AM</div>
+										<div class="name">Michael Hummelsson</div>
+										<div class="descr">IT-manager</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-1 col-sm-1 divider hidden-ms hidden-xs"></div>
+							<div class="col-md-7 col-sm-7 col-xs-9 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-ms-offset-3  col-xs-offset-3 text">
+								<h4>Welcome speech</h4>
+								<p>Nulla facilisi. Praesent velit nisl, fermentum vitae efficitur at, maximus in est. Etiam ultrices congue sapien, ut dictum sapien sodales id. Phasellus sit amet elementum leo.</p>
+								<a href="#" class="more">Read more <span class="fa fa-chevron-right"></span></a>
+							</div>
+						</div>
+						<div class="row item">
+							<div class="col-md-4 col-sm-4">
+								<div class="row">
+									<div class="col-lg-3 col-md-4 col-sm-4 col-xs-3">
+										<img src="assets/images/_speaker-2.jpg" class="full-width" alt="Speaker">
+									</div>
+									<div class="col-lg-9 col-md-8 col-sm-8 col-xs-9">
+										<div class="date">11:00 AM - 14:30 PM</div>
+										<div class="name">Lora Brown</div>
+										<div class="descr">Gas company President</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-1 col-sm-1 divider hidden-ms hidden-xs"></div>
+							<div class="col-md-7 col-sm-7 col-xs-9 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-ms-offset-3  col-xs-offset-3 text">
+								<h4>Effective optimization of business processes</h4>
+								<p>Sed fringilla dignissim velit, vitae posuere nulla mollis in. Ut tincidunt laoreet felis, a mollis est gravida vitae. Vestibulum dolor sapien, scelerisque nec malesuada at, egestas in augue. </p>
+								<a href="#" class="more">Read more <span class="fa fa-chevron-right"></span></a>
+							</div>
+						</div>
+						<div class="row item">
+							<div class="col-md-4 col-sm-4">
+								<div class="row">
+									<div class="col-lg-3 col-md-4 col-sm-4 col-xs-3">
+										<img src="assets/images/_speaker-3.jpg" class="full-width" alt="Speaker">
+									</div>
+									<div class="col-lg-9 col-md-8 col-sm-8 col-xs-9">
+										<div class="date">15:00 PM - 17:00 PM</div>
+										<div class="name">Silvia Goodman</div>
+										<div class="descr">IT-developer</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-1 col-sm-1 divider hidden-ms hidden-xs"></div>
+							<div class="col-md-7 col-sm-7 col-xs-9 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-ms-offset-3  col-xs-offset-3 text">
+								<h4>Legal risks in management decisions</h4>
+								<p>Nulla facilisi. Praesent velit nisl, fermentum vitae efficitur at, maximus in est. Etiam ultrices congue sapien, ut dictum sapien sodales id. Phasellus sit amet elementum leo.</p>
+								<a href="#" class="more">Read more <span class="fa fa-chevron-right"></span></a>
+							</div>
+						</div>
+						<div class="row item">
+							<div class="col-md-4 col-sm-4">
+								<div class="row">
+									<div class="col-lg-3 col-md-4 col-sm-4 col-xs-3">
+										<img src="assets/images/_speaker-4.jpg" class="full-width" alt="Speaker">
+									</div>
+									<div class="col-lg-9 col-md-8 col-sm-8 col-xs-9">
+										<div class="date">17:30 PM - 19:00 PM</div>
+										<div class="name">Marco Kalinich</div>
+										<div class="descr">General partner UST-motors</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-1 col-sm-1 divider hidden-ms hidden-xs"></div>
+							<div class="col-md-7 col-sm-7 col-xs-9 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-ms-offset-3  col-xs-offset-3 text">
+								<h4>Technologies in financial institutions</h4>
+								<p>Sed fringilla dignissim velit, vitae posuere nulla mollis in. Ut tincidunt laoreet felis, a mollis est gravida vitae. Vestibulum dolor sapien, scelerisque nec malesuada at, egestas in augue. </p>
+								<a href="#" class="more">Read more <span class="fa fa-chevron-right"></span></a>
+							</div>												
+						</div>
+					</div>
+
+					<div class="items swiper-slide">
+						<div class="row item">
+							<div class="col-md-4 col-sm-4">
+								<div class="row">
+									<div class="col-lg-3 col-md-4 col-sm-4 col-xs-3">
+										<img src="assets/images/_speaker-1.jpg" class="full-width" alt="Speaker">
+									</div>
+									<div class="col-lg-9 col-md-8 col-sm-8 col-xs-9">
+										<div class="date">8:00 AM - 10:30 AM</div>
+										<div class="name">Michael Hummelsson</div>
+										<div class="descr">IT-manager</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-1 col-sm-1 divider hidden-ms hidden-xs"></div>
+							<div class="col-md-7 col-sm-7 col-xs-9 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-ms-offset-3  col-xs-offset-3 text">
+								<h4>Welcome speech</h4>
+								<p>Nulla facilisi. Praesent velit nisl, fermentum vitae efficitur at, maximus in est. Etiam ultrices congue sapien, ut dictum sapien sodales id. Phasellus sit amet elementum leo.</p>
+								<a href="#" class="more">Read more <span class="fa fa-chevron-right"></span></a>
+							</div>
+						</div>
+						<div class="row item">
+							<div class="col-md-4 col-sm-4">
+								<div class="row">
+									<div class="col-lg-3 col-md-4 col-sm-4 col-xs-3">
+										<img src="assets/images/_speaker-2.jpg" class="full-width" alt="Speaker">
+									</div>
+									<div class="col-lg-9 col-md-8 col-sm-8 col-xs-9">
+										<div class="date">11:00 AM - 14:30 PM</div>
+										<div class="name">Lora Brown</div>
+										<div class="descr">Gas company President</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-1 col-sm-1 divider hidden-ms hidden-xs"></div>
+							<div class="col-md-7 col-sm-7 col-xs-9 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-ms-offset-3  col-xs-offset-3 text">
+								<h4>Effective optimization of business processes</h4>
+								<p>Sed fringilla dignissim velit, vitae posuere nulla mollis in. Ut tincidunt laoreet felis, a mollis est gravida vitae. Vestibulum dolor sapien, scelerisque nec malesuada at, egestas in augue. </p>
+								<a href="#" class="more">Read more <span class="fa fa-chevron-right"></span></a>
+							</div>
+						</div>
+						<div class="row item">
+							<div class="col-md-4 col-sm-4">
+								<div class="row">
+									<div class="col-lg-3 col-md-4 col-sm-4 col-xs-3">
+										<img src="assets/images/_speaker-3.jpg" class="full-width" alt="Speaker">
+									</div>
+									<div class="col-lg-9 col-md-8 col-sm-8 col-xs-9">
+										<div class="date">15:00 PM - 17:00 PM</div>
+										<div class="name">Silvia Goodman</div>
+										<div class="descr">IT-developer</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-1 col-sm-1 divider hidden-ms hidden-xs"></div>
+							<div class="col-md-7 col-sm-7 col-xs-9 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-ms-offset-3  col-xs-offset-3 text">
+								<h4>Legal risks in management decisions</h4>
+								<p>Nulla facilisi. Praesent velit nisl, fermentum vitae efficitur at, maximus in est. Etiam ultrices congue sapien, ut dictum sapien sodales id. Phasellus sit amet elementum leo.</p>
+								<a href="#" class="more">Read more <span class="fa fa-chevron-right"></span></a>
+							</div>
+						</div>
+						<div class="row item">
+							<div class="col-md-4 col-sm-4">
+								<div class="row">
+									<div class="col-lg-3 col-md-4 col-sm-4 col-xs-3">
+										<img src="assets/images/_speaker-4.jpg" class="full-width" alt="Speaker">
+									</div>
+									<div class="col-lg-9 col-md-8 col-sm-8 col-xs-9">
+										<div class="date">17:30 PM - 19:00 PM</div>
+										<div class="name">Marco Kalinich</div>
+										<div class="descr">General partner UST-motors</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-1 col-sm-1 divider hidden-ms hidden-xs"></div>
+							<div class="col-md-7 col-sm-7 col-xs-9 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-ms-offset-3  col-xs-offset-3 text">
+								<h4>Technologies in financial institutions</h4>
+								<p>Sed fringilla dignissim velit, vitae posuere nulla mollis in. Ut tincidunt laoreet felis, a mollis est gravida vitae. Vestibulum dolor sapien, scelerisque nec malesuada at, egestas in augue. </p>
+								<a href="#" class="more">Read more <span class="fa fa-chevron-right"></span></a>
+							</div>												
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="join" id="join">
+		<div class="container">
+			<h3 class="black">Join Conference</h3>
+			<div class="row price-tabs">
+				<div class="col-sm-4 col-ms-4">
+					<a href="#" class="item">
+						<span class="price">$40</span>
+						<span class="value">1 day</span>
+						<div class="info">
+							<ul>
+								<li>3 days Conference</li>
+								<li>Free Coffee Break</li>
+								<li>Free Parking</li>
+								<li>Speaker Consultation</li>
+							</ul>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-4 col-ms-4">
+					<a href="#" class="item">
+						<span class="price">$75</span>
+						<span class="value">2 days</span>
+						<div class="info">
+							<ul>
+								<li>3 days Conference</li>
+								<li>Free Coffee Break</li>
+								<li>Free Parking</li>
+							</ul>
+						</div>						
+					</a>
+				</div>
+				<div class="col-sm-4 col-ms-4">
+					<a href="#" class="item">
+						<span class="price">$95</span>
+						<span class="value">3 days</span>
+						<div class="info">
+							<ul>
+								<li>3 days Conference</li>
+								<li>Free Coffee Break</li>
+								<li>Free Parking</li>
+								<li>Speaker Consultation</li>
+							</ul>
+						</div>
+					</a>
+				</div>								
+			</div>
+
+			<form class="form-validate">
+				<div class="row">
+					<div class="col-xs-12"><h5>Please, enter information</h5></div>
+				
+					<div class="col-md-4 col-sm-6 col-sm-6 col-xs-12">
+						<input type="text" name="name" placeholder="Your First Name" value="" class="form-control required">
+					</div>
+					<div class="col-md-4 col-sm-6 col-sm-6 col-xs-12">
+						<input type="email" name="email" placeholder="E-mail" value="" class="form-control">
+					</div>
+					<div class="col-md-4 col-sm-6 col-sm-6 col-xs-12">
+						<div class="select">
+							<select class="form-control" name="days">
+								<option>1 day - $40</option>
+								<option>2 days - $75</option>
+								<option>3 days - $95</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-sm-6 col-xs-12">
+						<input type="text" name="lname" placeholder="Your Last Name" value="" class="form-control">
+					</div>
+					<div class="col-md-4 col-sm-6 col-sm-6 col-xs-12">
+						<input type="text" name="phone" placeholder="Phone Number" value="" class="form-control">
+					</div>
+					<div class="col-md-4 col-sm-6 col-sm-6 col-xs-12">
+						<input type="submit" name="join" value="Join Conference" class="btn btn-dark">
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+	<section id="sponsors">
+		<div class="container">	
+			<h3>Our Sponsors</h3>
+			<div class="swiper-container items row" id="sponsors-slider">
+				<div class="swiper-wrapper">
+					<div class="col-md-2 col-sm-3 col-ms-6 col-xs-12 swiper-slide">
+						<img src="assets/images/_company-1.png" alt="Sponsor">
+					</div>
+					<div class="col-md-2 col-sm-3 col-ms-6  col-xs-12 swiper-slide">
+						<img src="assets/images/_company-2.png" alt="Sponsor">
+					</div>
+					<div class="col-md-2 col-sm-3 col-ms-6  col-xs-12 swiper-slide">
+						<img src="assets/images/_company-3.png" alt="Sponsor">
+					</div>
+					<div class="col-md-2 col-sm-3 col-ms-6  col-xs-12 swiper-slide">
+						<img src="assets/images/_company-4.png" alt="Sponsor">
+					</div>
+					<div class="col-md-2 col-sm-3 col-ms-6  col-xs-12 swiper-slide">
+						<img src="assets/images/_company-5.png" alt="Sponsor">
+					</div>
+					<div class="col-md-2 col-sm-3 col-ms-6  col-xs-12 swiper-slide">
+						<img src="assets/images/_company-1.png" alt="Sponsor">
+					</div>
+					<div class="col-md-2 col-sm-3 col-ms-6  col-xs-12 swiper-slide">
+						<img src="assets/images/_company-2.png" alt="Sponsor">
+					</div>
+					<div class="col-md-2 col-sm-3 col-ms-6  col-xs-12 swiper-slide">
+						<img src="assets/images/_company-3.png" alt="Sponsor">
+					</div>
+					<div class="col-md-2 col-sm-3 col-ms-6  col-xs-12 swiper-slide">
+						<img src="assets/images/_company-4.png" alt="Sponsor">
+					</div>
+					<div class="col-md-2 col-sm-3 col-ms-6  col-xs-12 swiper-slide">
+						<img src="assets/images/_company-5.png" alt="Sponsor">
+					</div>					
+				</div>
+				<a href="#" class="arrow-left fa fa-chevron-left"></a>
+				<a href="#" class="arrow-right fa fa-chevron-right"></a>
+			</div>
+		</div>
+	</section>	
+	<section id="news">
+		<div class="container">
+			<h3>Latest News</h3>
+			<div class="row news">
+				<div class="col-md-4 col-sm-6">
+					<div class="item matchHeight">
+						<a href="#" class="photo">
+							<img src="assets/images/_news-1.jpg" alt="News" class="full-width">
+							<span class="date">29<span>dec</span></span>
+						</a>
+						<div class="descr">
+							<a href="#"><h5>Business inside us</h5></a>
+							<p>Sed fringilla dignissim velit, vitae posuere nulla mollis in. Ut tincidunt laoreet felis, a mollis est gravida vitae. Vestibulum dolor sapien, scelerisque nec malesuada at, egestas in augue. </p>
+							<a href="#" class="more">Read more <span class="fa fa-chevron-right"></span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="item matchHeight">
+						<a href="#" class="photo">
+							<img src="assets/images/_news-2.jpg" alt="News" class="full-width">
+							<span class="date">7<span>jan</span></span>
+						</a>
+						<div class="descr">						
+							<a href="#"><h5>The richest people</h5></a>
+							<p>Sed fringilla dignissim velit, vitae posuere nulla mollis in. Ut tincidunt laoreet felis, a mollis est gravida vitae. Vestibulum dolor sapien, scelerisque nec malesuada at, egestas in augue. </p>
+							<a href="#" class="more">Read more <span class="fa fa-chevron-right"></span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 hidden-sm hidden-ms hidden-xs">
+					<div class="item matchHeight">
+						<a href="#" class="photo">
+							<img src="assets/images/_news-3.jpg" alt="News" class="full-width">
+							<span class="date">18<span>jam</span></span>
+						</a>
+						<div class="descr">								
+							<a href="#"><h5>Business Conference Opening</h5></a>
+							<p>Sed fringilla dignissim velit, vitae posuere nulla mollis in. Ut tincidunt laoreet felis, a mollis est gravida vitae. Vestibulum dolor sapien, scelerisque nec malesuada at, egestas in augue. </p>
+							<a href="#" class="more">Read more <span class="fa fa-chevron-right"></span></a>
+						</div>
+					</div>
+				</div>								
+			</div>
+		</div>
+	</section>
+	<section id="subscribe">
+		<div class="container">	
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<h4>Want to receive the news first?</h4>
+					Sed fringilla dignissim velit, vitae posuere nulla mollis in. 
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<form>
+						<div class="input-group">
+							<input type="email" name="email" class="form-control" placeholder="Enter Your E-mail address">
+							<span class="input-group-btn">
+								<input type="submit" class="btn btn-dark" value="Subscribe">				
+							</span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="block-bottom" id="block-bottom">
+		<div class="container">
+			<div class="row row-eq-height borders">
+				<div class="col-md-4 col-sm-4 col-ms-12 item">
+					<img src="assets/images/logo.png" class="logo" alt="Logo">
+					<p class="logo-text">Sed fringilla dignissim velit, vitae posuere nulla mollis in. Ut tincidunt laoreet felis, a mollis est gravida vitae. Vestibulum dolor sapien.</p>
+				</div>
+				<div class="col-md-3 col-sm-3 col-ms-12 item hidden-xs hidden-ms">
+					<ul class="menu-footer clearfix">
+						<li><a href="#about">About</a></li>
+						<li><a href="#speakers">Our Speakers</a></li>
+						<li><a href="#plan">Schedule</a></li>
+						<li><a href="#join">Buy Tickets</a></li>
+						<li><a href="#sponsors">Partners</a></li>
+						<li><a href="#news">News</a></li>
+						<li><a href="#subscribe">Subscribe</a></li>
+					</ul>
+				</div>
+				<div class="col-md-5 col-sm-5 col-ms-12 item">
+					<div class="row">
+						<div class="col-lg-3 col-sm-12 col-ms-2">
+							<div class="date">
+								<span class="day">24</span>
+								<span class="month">april '17</span>
+							</div>
+						</div>
+						<div class="col-lg-9 col-sm-12 col-ms-6 address">
+							Business Hall, 20-198 Taller str., <br>
+							Madrid, Spain
+						</div>
+						<div class="col-lg-12 col-ms-12">
+							<h6>Follow Us</h6>
+							<ul class="social">
+								<li><a href="#" class="fa fa-facebook"></a></li>
+								<li><a href="#" class="fa fa-twitter"></a></li>
+								<li><a href="#" class="fa fa-instagram"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>				
+			</div>	
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<a href="http://like-themes.com">Like-themes</a> 2017 © All Rights Reserved <a href="#">Terms of use</a>
+			<a href="#" class="go-top fa fa-angle-up hidden-xs hidden-ms"></a>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.validate.js"></script>
+	<script type="text/javascript" src="assets/js/plugins.min.js"></script>
+	<script type="text/javascript" src="assets/js/scripts.js"></script>		
+	
+
+</body>
+</html>
