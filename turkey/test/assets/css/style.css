@@ -851,21 +851,21 @@ nav.navbar .navbar-toggle.collapsed .bottom-bar {
   background: url("../images/parallax-gray-top.png") 100% 50% no-repeat;
   z-index: 2;
 }
-#time {
+#time1 {
   background: #2990CB;
   color: #fff;
   padding: 43px 0 36px;
 }
-#time .header {
+#time1 .header {
   font-weight: 800;
   font-size: 30px;
 }
-#time .days {
+#time1 .days {
   display: inline-block;
   font-weight: 800;
   margin: 0 -15px;
 }
-#time .days > span {
+#time1 .days > span {
   font-family: 'Roboto', sans-serif;
   float: left;
   text-align: center;
@@ -873,74 +873,74 @@ nav.navbar .navbar-toggle.collapsed .bottom-bar {
   font-size: 36px;
   line-height: 0.8em;
 }
-#time .days > span:not(.divider) {
+#time1 .days > span:not(.divider) {
   width: 125px;
   padding-left: 15px;
   padding-right: 15px;
 }
-#time .days > span.divider {
+#time1 .days > span.divider {
   padding: 8px 0 0 0;
 }
-#time .days > span span {
+#time1 .days > span span {
   color: #99D6FF;
   display: block;
   font-size: 18px;
 }
-#time .btn {
+#time1 .btn {
   width: 100%;
   padding-left: 0;
   padding-right: 0;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  #time .days > span {
+  #time1 .days > span {
     font-size: 30px;
   }
-  #time .days > span:not(.divider) {
+  #time1 .days > span:not(.divider) {
     width: 95px;
     padding-left: 15px;
     padding-right: 15px;
   }
-  #time .days > span span {
+  #time1 .days > span span {
     font-size: 16px;
   }
 }
 @media (max-width: 991px) {
-  #time {
+  #time1 {
     text-align: center;
   }
-  #time .days {
+  #time1 .days {
     margin: 20px 0;
   }
-  #time .days > span {
+  #time1 .days > span {
     font-size: 30px;
   }
-  #time .days > span:not(.divider) {
+  #time1 .days > span:not(.divider) {
     width: 95px;
     padding-left: 15px;
     padding-right: 15px;
   }
-  #time .days > span span {
+  #time1 .days > span span {
     font-size: 16px;
   }
-  #time .btn {
+  #time1 .btn {
     max-width: 200px;
     margin: 0 auto;
   }
 }
 @media (max-width: 479px) {
-  #time .header {
+  #time1 .header {
     font-size: 28px;
     margin-bottom: 10px;
   }
-  #time .days > span {
+  #time1 .days > span {
     font-size: 24px;
   }
-  #time .days > span:not(.divider) {
+  #time1 .days > span:not(.divider) {
     width: 65px;
     padding-left: 8px;
     padding-right: 8px;
   }
-  #time .days > span span {
+  #time1 .days > span span {
     font-size: 14px;
   }
 }
@@ -1914,3 +1914,177 @@ img.rounded {
   background: #55ACEE;
   color: white;
 } 
+
+.fa-linkedin {
+  background: #55ACEE;
+  color: white;
+}
+
+/*************************
+ * GRID SCHEDULE LAYOUT
+ *************************/
+@media screen and (min-width:700px) {
+	.schedule {
+		display: grid;
+		grid-gap: 1em;
+		grid-template-rows:
+			[tracks] auto
+			[time-0800] 1fr
+			[time-0830] 1fr
+			[time-0900] 1fr
+			[time-0930] 1fr
+			[time-1000] 1fr
+			[time-1030] 1fr
+			[time-1100] 1fr
+			[time-1130] 1fr
+			[time-1200] 1fr;
+			/* Note 1:
+			Use 24hr time for gridline names for simplicity
+
+			Note 2: Use "auto" instead of "1fr" for a more compact schedule where height of a slot is not proportional to the session length. Implementing a "compact" shortcode attribute might make sense for this!
+			Try 0.5fr for more compact equal rows. I don't quite understand how that works :)
+			*/
+		
+		grid-template-columns:
+			[times] 4em
+			[track-1-start] 1fr
+			[track-1-end track-2-start] 1fr
+			[track-2-end track-3-start] 1fr
+			[track-3-end track-4-start] 1fr
+			[track-4-end];
+	}
+}
+
+.time-slot {
+	grid-column: times;
+}
+
+.track-slot {
+	display: none; /* hidden on small screens and browsers without grid support */
+}
+
+@supports( display:grid ) {
+	@media screen and (min-width:700px) {
+		.track-slot {
+			display: block;
+			padding: 10px 5px 5px;
+			position: sticky;
+			top: 0;
+			z-index: 1000;
+			background-color: rgba(255,255,255,.9);
+		}
+	}
+}
+
+/* Small-screen & fallback styles */
+.session {
+	margin-bottom:  1em;
+}
+
+@supports( display:grid ) {
+	@media screen and (min-width: 700px) {
+		.session {
+			margin: 0;
+		}	
+	}
+}
+
+/*************************
+ * VISUAL STYLES
+ * Design-y stuff ot particularly important to the demo
+ *************************/
+#schedulebody{
+	padding: 50px;
+	max-width: 1100px;
+	margin: 0 auto;
+	line-height: 1.5;
+}
+
+.session {
+	padding: .8em;
+	border-radius: 2px;
+	font-size: 12px;
+	box-shadow:
+		rgba(255,255,255,.6) 1px 1px 0,
+		rgba(0,0,0,.3) 4px 4px 0;
+}
+
+.session-title,
+.session-time,
+.session-track,
+.session-presenter {
+	display: block;
+}
+
+.session-title,
+.time-slot {
+	margin: 0;
+	font-size: 0.5em;
+}
+
+.session-title a {
+	color: #fff;
+	text-decoration-style: dotted;
+	
+	&:hover {
+		font-style: italic;
+	}
+	
+	&:focus {
+		outline: 2px dotted rgba(255,255,255,.8);
+	}
+}
+
+.track-slot,
+.time-slot {
+	font-weight: bold;
+	font-size:.75em;
+}
+
+.track-1 {
+	background-color: #1259B2;
+	color: #fff;
+}
+
+.track-2 {
+	background-color: #687f00;
+	color: #fff;
+}
+
+.track-3 {
+	background-color: #544D69;
+	color: #fff;
+}
+
+.track-4 {
+	background-color: #c35500;
+	color: #fff;
+}
+
+.track-all {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #ccc;
+	color: #000;
+	box-shadow: none;
+}
+
+.text {
+	max-width: 750px;
+	font-size: 18px;
+	margin: 0 auto 50px;
+}
+
+.meta {
+	color: #555;
+	font-style: italic;
+}
+
+.meta a {
+	color: #555;
+}
+
+hr {
+	margin: 40px 0;
+}
