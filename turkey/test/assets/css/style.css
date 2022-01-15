@@ -2095,3 +2095,34 @@ img.rounded {
 hr {
 	margin: 40px 0;
 }
+
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+
+.btn.btn-blue{
+    color: #f5f5f5;;
+    border:#337ab7;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+}

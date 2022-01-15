@@ -18,13 +18,13 @@ $(document).on('ready', function() {
 
 	$('#daysCountDown').countdown($('#daysCountDown').data('date'), function(event) {
 	  var $this = $(this).html(event.strftime(''
-		+ '<span>%D <span>days</span></span>'
+		+ '<span>%D <span>gün</span></span>'
 		+ '<span class="divider">:</span>'
-		+ '<span>%H <span>hours</span></span>'
+		+ '<span>%H <span>saat</span></span>'
 		+ '<span class="divider">:</span>'
-		+ '<span>%M <span>min</span></span>'
+		+ '<span>%M <span>dakika</span></span>'
 		+ '<span class="divider">:</span>'
-		+ '<span>%S <span>sec</span></span>'));
+		+ '<span>%S <span>saniye</span></span>'));
 	});	
 	
 	$('#navbar, .menu-footer, #time').on('click', 'a', function (event) {
