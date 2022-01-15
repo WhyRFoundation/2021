@@ -456,6 +456,11 @@ h5 {
   font-size: 48px;
   color: #041A39;
 }
+hh {
+    font-weight: 800;
+    font-size: 48px;
+    color: #cdd2d8;
+}
 h1 span.invert,
 h2 span.invert,
 h3 span.invert,
@@ -739,6 +744,7 @@ nav.navbar .navbar-toggle.collapsed .bottom-bar {
   font-weight: 300;
   width: 80%;
   margin-top: 50px;
+  text-align: justify;
 }
 #slider-full .btn {
   margin-top: 75px;
@@ -954,6 +960,7 @@ nav.navbar .navbar-toggle.collapsed .bottom-bar {
 #about p {
   width: 80%;
   margin: 0 auto;
+  text-align: justify;
 }
 #about .map-marker {
   margin: 50px 0;
@@ -1891,7 +1898,7 @@ img.rounded {
 .fa {
   padding: 20px;
   font-size: 30px;
-  width: 50px;
+  width: 65px;
   text-align: center;
   text-decoration: none;
 }
@@ -1919,7 +1926,6 @@ img.rounded {
   background: #55ACEE;
   color: white;
 }
-
 
 /*************************
  * GRID SCHEDULE LAYOUT
