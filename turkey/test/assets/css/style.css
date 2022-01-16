@@ -1333,6 +1333,12 @@ form select.error {
   padding: 100px 0 105px;
   border-bottom: 1px solid #D9D9D9;
 }
+
+.verticalcenter {
+    display: table-cell;
+    height: 200px;
+    vertical-align: middle;
+}
 #sponsors #sponsors-slider {
   margin-top: 70px;
 }
@@ -1346,7 +1352,7 @@ form select.error {
   z-index: 10;
   background: #2990CB;
   color: #fff;
-  margin: -20px 0 0 0;
+  margin: 60px 0 0 0;
   padding: 12px 14px;
   font-size: 13px;
   transition: background .5s ease;
