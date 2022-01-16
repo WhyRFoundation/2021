@@ -1336,7 +1336,7 @@ form select.error {
 
 .verticalcenter {
     display: table-cell;
-    height: 200px;
+    height: 201px;
     vertical-align: middle;
 }
 #sponsors #sponsors-slider {
